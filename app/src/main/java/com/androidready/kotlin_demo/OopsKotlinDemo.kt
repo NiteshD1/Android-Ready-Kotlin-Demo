@@ -2,20 +2,20 @@ package com.androidready.kotlin_demo
 
 fun main() {
 
-    var student = Student("Rahul",22)
-    //student.print()
-    //student.print("with some custom messge")
-    var student1 = Student()
+    var car = Car(Constants.FOUR_WHEELER,100)
+    //car.print()
+    //car.print("with some custom messge")
+    var car1 = Car()
 
     //Abstraction
     //var task = Task()
-    val person = Person()
+    val vehicle = Vehicle()
 
-    //person.generateHealthReport()
+    vehicle.displaySpeedInfo()
 
     //data class
-    println(person)
-    var doctor = Doctor("Rahul",45)
+    println(vehicle)
+    var engine = Engine("xt354",50000)
 
-    println(doctor)
+    println(engine)
 }
