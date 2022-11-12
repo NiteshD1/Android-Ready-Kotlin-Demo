@@ -155,7 +155,7 @@ fun divideByZero(){
     var num : Int
     var divideBy = 0
 
- //   In Kotlin, we use throw keyword to throw an explicit exception. It can also be used to throw a custom exception.
+    //   In Kotlin, we use throw keyword to throw an explicit exception. It can also be used to throw a custom exception.
 //    if(divideBy == 0){
 //        throw ArithmeticException("divideBy can not be zero")
 //    }

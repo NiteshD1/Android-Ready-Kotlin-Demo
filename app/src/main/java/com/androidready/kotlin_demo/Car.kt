@@ -19,7 +19,7 @@ class Car : Vehicle{
     }
 
     constructor(){
-        
+
     }
 
     override fun print() {

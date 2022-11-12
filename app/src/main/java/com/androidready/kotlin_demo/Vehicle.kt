@@ -5,14 +5,14 @@ open class Vehicle : Features {
     //private var age: Int? = null
     //protected var age: Int? = null
     var price: Int? = null
-    set(value) {
-        println("price setter is called")
-        field = value
-    }
-    get() {
-        println("price getter is called")
-        return field
-    }
+        set(value) {
+            println("price setter is called")
+            field = value
+        }
+        get() {
+            println("price getter is called")
+            return field
+        }
     // private, current class
     // protect, class and subclass
     // public , everywhere

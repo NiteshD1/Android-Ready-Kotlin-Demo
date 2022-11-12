@@ -18,7 +18,7 @@ fun main(){
     for(item in arr){
         println(item)
     }
-    
+
     val stringList : List<String> = listOf<String>("Ram","Shyam","Rohit")
     for(str in stringList){
         println(str)

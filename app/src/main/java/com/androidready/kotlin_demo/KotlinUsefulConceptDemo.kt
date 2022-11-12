@@ -21,7 +21,7 @@ fun main(){
 //    println("Length of str is ${len1}")
 //    println("Length of str2 is ${len2}")
 
-     // smart cast
+    // smart cast
     var obj = "Hello!"
     if(obj is String) { // smart cast
         println(obj.length) // It works now!
