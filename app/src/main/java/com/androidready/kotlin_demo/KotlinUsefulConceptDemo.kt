@@ -86,4 +86,6 @@ fun main(){
     }
     //println(VehicleEnum.valueOf("Heart"))
 
+    val myJava = MyJava()
+    println(myJava.add(5,6))
 }
