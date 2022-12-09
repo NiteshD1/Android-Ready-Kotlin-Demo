@@ -1,7 +1,7 @@
 package com.androidready.kotlin_demo
 
 open class Vehicle() : Feature() {
-    var type : String? = null
+    lateinit var type : String
 
     constructor(type:String) : this() {
         this.type = type
