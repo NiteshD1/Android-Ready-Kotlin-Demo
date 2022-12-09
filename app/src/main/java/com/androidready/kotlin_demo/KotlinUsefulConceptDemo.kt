@@ -22,7 +22,7 @@ fun main(){
 //    println("Length of str2 is ${len2}")
 
     // smart cast
-    var obj = "Hello!"
+    var obj : Any = "Hello!"
     if(obj is String) { // smart cast
         println(obj.length) // It works now!
     }
@@ -32,13 +32,13 @@ fun main(){
     // scope functions
     obj1?.let {
         // enter if obj is not null
-        println(obj)
+        println("let called with safe $it")
     }
 
     obj = "Android"
 
     obj1.let {
-        println(obj1)
+        println("let called without safe $it")
     }
 
     var vehicle1: Vehicle? = Vehicle().apply {
@@ -47,15 +47,15 @@ fun main(){
         println(type)
     }
 
-    with(vehicle){
-        println(this?.type)
-        println(this!!.price)
-    }
+//    with(vehicle){
+//        println(this?.type)
+//        println(this!!.price)
+//    }
 
-    vehicle?.run {
-        println(type)
-        println(price)
-    }
+//    vehicle?.run {
+//        println(type)
+//        println(price)
+//    }
 
     val list = mutableListOf<Int>(1, 2, 3)
 
@@ -84,6 +84,6 @@ fun main(){
     for(card in VehicleEnum.values()){
         println(card.color)
     }
-    println(VehicleEnum.valueOf("Heart"))
+    //println(VehicleEnum.valueOf("Heart"))
 
 }
