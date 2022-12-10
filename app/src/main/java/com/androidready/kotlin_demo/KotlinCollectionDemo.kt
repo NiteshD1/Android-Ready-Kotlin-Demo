@@ -7,9 +7,18 @@ fun main(){
     val intArray = intArrayOf(5,3,4,5)
 
     val arr = arrayOf(2,3.0,"Ram",Car(),true)
+    var myLambda : (Int) -> Unit = {
+        println("Number is $it")
+    }
+    intArray.forEach(myLambda)
+
     intArray.forEach {
         println("Number is $it")
     }
+
+//    intArray.forEach() {
+//        println("Number is $it")
+//    }
 
 //    for(number in intArray){
 //        println("Number is $number")
